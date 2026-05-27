@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Consolas';
+  src:
+    url('/font/Consolas.woff2') format('woff2'),
+    url('/font/Consolas.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar Configuration */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9cdcfe;
+  border-radius: 4px;
+  border: 2px solid #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5ba3cb;
+}
